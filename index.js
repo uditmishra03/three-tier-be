@@ -43,9 +43,10 @@ app.get('/started', (req, res) => {
 // Version endpoint for demo testing
 app.get('/api/version', (req, res) => {
     res.status(200).json({
-        version: '2.0.0',
-        message: 'Backend API - Orange Theme Update',
-        timestamp: new Date().toISOString()
+        version: '2.1.0',
+        message: 'Backend API - Production Ready v2.1',
+        timestamp: new Date().toISOString(),
+        status: 'healthy'
     });
 });
 
