@@ -40,6 +40,15 @@ app.get('/started', (req, res) => {
     res.status(200).send('Started');
 });
 
+// Version endpoint for demo testing
+app.get('/api/version', (req, res) => {
+    res.status(200).json({
+        version: '2.0.0',
+        message: 'Backend API - Orange Theme Update',
+        timestamp: new Date().toISOString()
+    });
+});
+
 app.use("/api/tasks", tasks);
 
 const port = process.env.PORT || 3500;
