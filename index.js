@@ -43,10 +43,11 @@ app.get('/started', (req, res) => {
 // Version endpoint for demo testing
 app.get('/api/version', (req, res) => {
     res.status(200).json({
-        version: '2.1.0',
-        message: 'Backend API - Production Ready v2.1',
+        version: '2.2.0',
+        message: 'Backend API - DevSecOps Demo Pipeline Active',
         timestamp: new Date().toISOString(),
-        status: 'healthy'
+        status: 'healthy',
+        pipeline: 'CI/CD Automated Deployment'
     });
 });
 
